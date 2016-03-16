@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+/public/storage
+/public/phpdocs
+/bower_components
+Homestead.yaml
+Homestead.json
+/.idea
+.env

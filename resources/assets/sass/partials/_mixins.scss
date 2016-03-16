@@ -1,0 +1,69 @@
+@import "utility-belt";
+
+/* ------------------------------------------------------------------------------
+ *  Align middle vertically.
+ * ------------------------------------------------------------------------------ */
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ------------------------------------------------------------------------------
+ *  Remove rounded corners. Used to remove bootstrap rounded frames
+ * ------------------------------------------------------------------------------ */
+@mixin no-rounded-corners {
+-webkit-border-radius: 0 !important;
+-moz-border-radius: 0 !important;
+border-radius: 0 !important;
+}
+
+/* ------------------------------------------------------------------------------
+ *  Semi transparent mixin.
+ *   Link: http://thesassway.com/intermediate/mixins-for-semi-transparent-colors
+ * ------------------------------------------------------------------------------ */
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+/* ------------------------------------------------------------------------------
+ *  Box shadow
+ * ------------------------------------------------------------------------------ */
+@mixin docs-shadow {
+  -moz-box-shadow: 0 0 5px rgba(24, 28, 53, 0.74);
+  -webkit-box-shadow: 0 0 5px rgba(24, 28, 53, 0.74);
+  box-shadow: 0 0 5px rgba(24, 28, 53, 0.74);
+}
+
+/* ------------------------------------------------------------------------------
+ *  Default font configuration for documentation code blocks.
+ * ------------------------------------------------------------------------------ */
+@mixin docs-codeblock {
+  padding: 10px;
+  background-color: #0a0a0a;
+  color: #fdf8ff;
+  font-family: Monaco, Consolas, Lucida Console, dejavu sans mono, monospace;
+  font-size: 14px;
+  border: 1px solid #fdf8ff;
+}
+
+/* ------------------------------------------------------------------------------
+ *  Mixin for summary tags to docs sections. usage @include docs-summary
+ * ------------------------------------------------------------------------------ */
+@mixin docs-summary {
+  background: rgba(207, 255, 250, 0.8) url('/img/icons/info.png') no-repeat;
+  color: #274886;
+  border: 1px dotted;
+  padding: 4px 2px 2px 35px;
+  margin-left: 45px;
+  width: 95%;
+  font-family: "DejaVu Sans Light", fantasy;
+  font-style: italic;
+  min-height: 26px;
+}
