@@ -1,5 +1,5 @@
 <!--suppress HtmlUnknownTarget -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png"
-                                                  alt="Labour Bill | Home" title="Labour Bill | Home"></a>
+                                                  alt="SIADEV | Home" title="SIADEV | Home"></a>
         </div>
         <div class="nav navbar-nav">
             Fast and Easy Billing System
@@ -34,15 +34,16 @@
 
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Laravel Installation</li>
+                        <li role="separator" class="divider-underline"></li>
                         <li><a href="/docs/sqlite">SQLite</a></li>
                         <li><a href="/docs/phpdoc">PHP Documentor</a></li>
                         <li><a href="/phpdocs">View Generated phpDocumentor</a></li>
 
                         <li role="separator" class="divider"></li>
                         <li><a href="/docs/laravelkb">Laravel Knowledge Base</a></li>
-
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Linux and Web Server configurations</li>
+                        <li role="separator" class="divider-underline"></li>
                         <li><a href="/docs/nginx_deployment">nginx Deployment</a></li>
                         <li><a href="/docs/command_line"
                                title="Commands used on this site, for all web related installations"
@@ -51,21 +52,43 @@
                     </ul>
                 </li>
 
+
+            <li class="dropdown">
+                <a href="/templates" class="dropdown-toggle" data-toggle="dropdown"
+                   role="button" aria-haspopup="true" aria-expanded="false">
+                    CMS
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/cms">Dashboard</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Main Pages</li>
+                    <li role="separator" class="divider-underline"></li>
+                    <li><a href="Templates">Templates</a></li>
+                    <li><a href="/cms/pages">Pages</a></li>
+                    <li><a href="/cms/articles">Articles</a></li>
+                    <li><a href="/cms/articles">Menus</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Designing</li>
+                    <li role="separator" class="divider-underline"></li>
+                    <li><a href="/cms/template/create">Create Templates</a></li>
+                    <li><a href="/cms/template/design">Design Existing Templates</a></li>
+                </ul>
+            </li>
+
                 <li class="dropdown">
-                                    <a href="/flyer" class="dropdown-toggle" data-toggle="dropdown"
-                                       role="button" aria-haspopup="true" aria-expanded="false">
-                                        Flyers
-                                        <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="/flyers">Flyers main page</a></li>
-                                        <li><a href="/flyers/create">Create a Flyer</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">Other links</li>
-                                        <li><a href="#">wip</a></li>
-                                        <li><a href="#">wip</a></li>
-                                    </ul>
-                                </li>
-                <!-- /.dropdown -->
+                        <a href="/flyer" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button" aria-haspopup="true" aria-expanded="false">
+                            Flyers
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/flyers">Flyers main page</a></li>
+                            <li><a href="/flyers/create">Create a Flyer</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Other links</li>
+                            <li><a href="#">wip</a></li>
+                            <li><a href="#">wip</a></li>
+                        </ul>
+                </li>  <!-- /.Flyers -->
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"

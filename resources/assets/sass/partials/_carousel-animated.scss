@@ -1,0 +1,76 @@
+#carousel-example{
+  margin: 0;
+  padding: 10px 0 0;
+  background: #263873;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel .item {
+  min-height: 450px !important;
+  height: 100%;
+  width:100%;
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+  background-color: #293d81;
+}
+.carousel-caption h3 {
+  padding: .5em;
+}
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 1em;
+  text-align: center;
+
+  border-radius: 50%;
+}
+.carousel-caption button {
+  border-color: #00bfff;
+  margin-top: 1em;
+}
+
+/* Animation delays */
+.carousel-caption img:first-child {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.carousel-caption h3:first-child {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.carousel-caption h3:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.carousel-caption button {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+

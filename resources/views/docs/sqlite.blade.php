@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title'  => "Documentation - SQLITE",
                 'page_header' => "Using SQLite"
                 ])

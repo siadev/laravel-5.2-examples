@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title' => "Laravel tips and tricks",
                 'page_header' => "Laravel Knowledge Base"
                 ])

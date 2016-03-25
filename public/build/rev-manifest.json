@@ -1,4 +1,9 @@
 {
-  "css/all.css": "css/all-b7bb325707.css",
-  "js/all.js": "js/all-84109aa8c8.js"
+  "css/app.css": "css/app-df7160bc7e.css",
+  "css/cms-ui.min.css": "css/cms-ui.min-727a2468ca.css",
+  "css/effects.min.css": "css/effects.min-39a55b9d3d.css",
+  "js/cms-ui.min.js": "js/cms-ui.min-4d21a78050.js",
+  "js/dependencies.min.js": "js/dependencies.min-106741b32a.js",
+  "js/effects.min.js": "js/effects.min-99eb4e8799.js",
+  "js/vue.min.js": "js/vue.min-4d88acadf5.js"
 }

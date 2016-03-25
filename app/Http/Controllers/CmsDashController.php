@@ -22,4 +22,9 @@ class CmsDashController extends Controller
     {
         return view('cms_dashboard.dashboard');
     }
+
+    public function frame()
+    {
+        return view('cms_dashboard.dashboard-frame');
+    }
 }

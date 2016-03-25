@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title' => " Dropzone "
                 ])
 

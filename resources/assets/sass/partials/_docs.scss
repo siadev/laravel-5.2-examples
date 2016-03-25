@@ -1,8 +1,23 @@
-/*
- * Styles for Online documentation
- * @author    Simon Assouline
- * @copyright (c) 2016 SIACOM, all rights reserved.
+/* |==============================================================
+   | Styles for Online documentation
+   | @author    Simon Assouline
+   | @copyright (c) 2016 SIACOM (SIADEV), all rights reserved.
+   |==============================================================
 */
+
+@mixin doc-relation-banner {
+  position: absolute;
+  width: 798px;
+  font-size: 1.1em;
+  content: attr(rel);
+  color: white;
+  height: 30px;
+  margin-top: -30px;
+  margin-left: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 4px 0 1px;
+  text-indent: 15px;
+}
 
 $note-color: #eacd86;
 
@@ -55,6 +70,41 @@ div.docs-cli:hover {
 
 .docs-bullet > li::after {
   content: url("/img/buttons/next.png");
-
 }
 
+.docs-test {
+  width: 800px;
+  padding: 0;
+  margin: 30px auto 0;
+  margin-bottom: 20px;
+  //background-color: #bcdf9a;
+}
+
+.docs-test pre[rel="HTML"]::before {
+  @include doc-relation-banner;
+  @include gradient-horizontal(#5ea55e, #1dc937, 10%, 60%);
+}
+
+.docs-test pre[rel="Command Line"]::before {
+  @include doc-relation-banner;
+  @include gradient-horizontal(#1d26a5, #221cee, 10%, 60%);
+}
+
+.docs-test pre[rel="PHP"]::before {
+  @include doc-relation-banner;
+  @include gradient-horizontal(#683434, #c1634f, 10%, 60%);
+}
+
+.docs-test pre[rel="Command Line"] > code::before {
+  color: #4395ff;
+  content: ":~/ $ ";
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+.docs-test > pre{
+  margin: 35px 0 0;
+  padding: 0;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}

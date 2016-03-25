@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title'  => "nginx Deployment",
                 'page_header' => "nginx Server installation for Laravel framework"
                 ])

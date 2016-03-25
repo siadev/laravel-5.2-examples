@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title'  => "PHP Documentor",
                 'page_header' => "phpDocumentor"
                 ])
@@ -49,7 +49,7 @@
     });
 
         <b><img src="/img/buttons/next.png"> MAKE SURE TO REMOVE THIS FOR PRODUCTION <img src="/img/buttons/prev.png"></b>
-                   or find a way to automate what you include in production.
+                   or find a way to automate what you exclude in production.
                         </pre>
                     </div>
                 </div>

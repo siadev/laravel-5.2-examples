@@ -1,4 +1,4 @@
-@extends('layout', [
+@extends('layouts.app', [
                 'page_title'   => "CMS Template creation$",
                 'page_header' => "CMS Template creation$"
                 ])

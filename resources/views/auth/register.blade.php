@@ -1,5 +1,7 @@
-@extends('layouts.app')
-
+@extends('layouts.app', [
+                'page_title'   => "Registration",
+                'page_header' => "Registration"
+                ])
 @section('content')
 <div class="container">
     <div class="row">

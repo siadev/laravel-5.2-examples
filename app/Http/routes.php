@@ -1,16 +1,4 @@
 <?php
-/**
-|--------------------------------------------------------------------------
-| Routes File
-|--------------------------------------------------------------------------
-|
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-
 
 // _doc Implicit Binding
 // _note usage: http://simontests.dev/pages/1/
@@ -52,8 +40,9 @@ Route::group(['middleware' => 'web'], function () {
     });
 
     Route::get('/home', 'HomeController@index');
-    Route::get('cms', 'CmsDashController@dashboard');
 
+    Route::get('cms', 'CmsDashController@dashboard');
+    Route::get('cms-frame', 'CmsDashController@frame');
     Route::resource('cms/templates', 'CmsTemplateController');
     Route::resource('cms/pages', 'CmsPageController');
 

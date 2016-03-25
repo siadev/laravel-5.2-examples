@@ -3,11 +3,36 @@ $nav-hover-col: #ffb836;
 $nav-background: #263873;
 $nav-focus-color: #a09a9a;
 
+/*
+ * Navigation custom rules.
+ * Also see this site for bootstrap changes:
+ * http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+ */
+
+.navbar {
+  @include no-rounded-corners;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  width: 300px;
+}
+
+nav {
+  box-shadow: 0 5px 5px #394dba;
+  background-color: #0b3e6f;
+}
 
 .navbar-default .navbar-nav .dropdown-header {
-  color: #bdbdbd;
-  background-color: #0b3e6f;
-  text-decoration: underline;
+  color: #28dd29;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.divider-underline {
+  border-bottom: 1px dotted #6e6e6e;
+  width: 100%;
 }
 
  // Drop the Dropdown on hover.
